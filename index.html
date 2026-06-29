@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flag Guess 101</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="game-card">
+        <h1>Flag Guess 101</h1>
+        <p class="subtitle">Guess the country shown by the flag.</p>
+
+        <div id="flag-display" class="flag-display" aria-live="polite"></div>
+
+        <p id="feedback" class="feedback">Type the country name.</p>
+
+        <form id="guess-form" class="guess-form">
+          <label class="sr-only" for="guess-input">Enter country name</label>
+          <input
+            id="guess-input"
+            name="guess"
+            type="text"
+            autocomplete="off"
+            placeholder="Type a country..."
+          />
+          <button type="submit">Guess</button>
+        </form>
+
+        <div id="options-container" class="options-container" hidden></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
